@@ -1,0 +1,30 @@
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./Header";
+import Home from "./Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+function App() {
+  {
+    /* <h1> Hey there lets code Amazon </h1> */
+  }
+  return (
+    <Router>
+      <div className="app">
+        <Switch>
+          <Route path="/checkout">
+            <Header />
+            <h1> This is gonna be the checkout page</h1>
+          </Route>
+
+          <Route path="/">
+            <Header />
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
