@@ -1,9 +1,10 @@
 import React from "react";
 import "./product.css";
-import StarIcon from "@material-ui/icons/Star";
+import Star from "@material-ui/icons/Star";
 import { useStateValue } from "./StateProvider";
 function Product({ id, title, image, price, rating }) {
-  const [{ state }, dispatch] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
+  // console.log("this is the basket>> ", basket);
   const addToBasket = () => {
     // dispatch item
 
@@ -33,13 +34,15 @@ function Product({ id, title, image, price, rating }) {
             .fill()
             .map((_, i) => (
               // <p>🌟</p>
-              <StarIcon className="star" />
+              <Star className="star" />
             ))}
         </div>
       </div>
 
       <img src={image} alt="" />
-      <button onClick={addToBasket}>Add to Basket</button>
+      <button className="addToBasket" onClick={addToBasket}>
+        Add to Basket
+      </button>
     </div>
   );
 }
