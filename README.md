@@ -3,8 +3,8 @@
 To run the project download the zip file and run
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project is hosted on firebase.\
+Open [https://clone0001.web.app/](https://clone0001.web.app/) to view it in the browser.
 
 
 ### `Home Page`
