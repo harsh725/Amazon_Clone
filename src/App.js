@@ -35,18 +35,17 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
-
-          <Route path="/checkout">
-            <Header />
-            <Checkout />
-          </Route>
-
           <Route path="/">
             <Header />
             <Home />
+            <Route path="/login">
+              <Login />
+            </Route>
+
+            <Route path="/checkout">
+              <Header />
+              <Checkout />
+            </Route>
           </Route>
         </Switch>
       </div>
