@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+// require("./images/asus_rog.jpg");
 function Home() {
   return (
     <div className="home">
@@ -21,10 +22,10 @@ function Home() {
 
           <Product
             id="49538094"
-            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
-            price={239.0}
-            rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            title={`ASUS ROG Zephyrus G14, 14" (35.56 cm) QHD, Ryzen 7 4800HS, GTX 1660Ti Max-Q 8GB GDDR6 Graphics, Gaming Laptop (32GB RAM 2TB SSD/1.1 Kg) `}
+            rating={5}
+            price={1499.99}
+            image="images/asus_rog.jpg"
           />
         </div>
         <div className="home_row">

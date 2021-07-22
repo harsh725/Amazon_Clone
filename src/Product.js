@@ -2,6 +2,7 @@ import React from "react";
 import "./product.css";
 import Star from "@material-ui/icons/Star";
 import { useStateValue } from "./StateProvider";
+
 function Product({ id, title, image, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
   // console.log("this is the basket>> ", basket);
