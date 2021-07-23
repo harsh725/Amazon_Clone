@@ -1,9 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-
-function Payment() {
-  return <div className="payment"></div>;
-=======
 import { Link } from "react-router-dom";
 import CheckoutProduct from "./CheckoutProduct";
 
@@ -57,7 +52,6 @@ function Payment() {
       </div>
     </div>
   );
->>>>>>> parent of 6949f60 (stripe payment gateway)
 }
 
 export default Payment;
